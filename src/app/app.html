@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.favicon %>">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <base href="/">
+</head>
+<body ng-app='AngularForm' ng-strict-di ng-cloak>
+    <div class="container">
+        <form class="well form-horizontal"
+              name="form"
+              method="post"
+              id="contact_form"
+              ng-controller="FormСontroller as formCtrl"
+              ng-submit="form.$valid"
+              novalidate="novalidate">
+              <legend>Contact Us Today!</legend>
+        </form>
+    </div>
+</body>
+</html>
